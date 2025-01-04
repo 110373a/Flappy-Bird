@@ -17,20 +17,20 @@ y = 850
 main_screen = pygame.display.set_mode((x, y))
 
 #بکگراند
-background_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\bg1.png"))
+background_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\bg1.png"))
 
 #زمین بازی
-floor_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\floor.png"))
+floor_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\floor.png"))
 floor_x = 0
 
 #=================================================================================================================
 #صدا ها
-win_sound = pygame.mixer.Sound(r"Flappy Bird\assets\sound\smb_stomp.wav")
-game_over_sound = pygame.mixer.Sound(r"Flappy Bird\assets\sound\smb_mariodie.wav")
+win_sound = pygame.mixer.Sound(r"assets\sound\smb_stomp.wav")
+game_over_sound = pygame.mixer.Sound(r"assets\sound\smb_mariodie.wav")
 
 #=================================================================================================================
 #امتیازدهی
-game_font = pygame.font.Font(r"Flappy Bird\assets\font\Flappy.TTF", 40)
+game_font = pygame.font.Font(r"assets\font\Flappy.TTF", 40)
 
 #نمایش امتیاز
 score = 0
@@ -70,7 +70,7 @@ def update_score():
 
 #=================================================================================================================
 #لوله ها
-pipe_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\pipe_green.png"))
+pipe_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\pipe_green.png"))
 create_pipe = pygame.USEREVENT
 pygame.time.set_timer(create_pipe, 1400)
 pipe_list = []
@@ -99,9 +99,9 @@ def display_pipe(pipes):
 
 #=================================================================================================================
 #پرنده
-bird_mid_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\red_bird_mid_flap.png"))
-bird_up_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\red_bird_up_flap.png"))
-bird_down_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\red_bird_down_flap.png"))
+bird_mid_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\red_bird_mid_flap.png"))
+bird_up_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\red_bird_up_flap.png"))
+bird_down_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\red_bird_down_flap.png"))
 
 #نمایش پرواز پرنده
 bird_list_index = 0
@@ -120,7 +120,7 @@ Gravity = 0.20
 bird_movment =0 
 #=================================================================================================================
 #صفحه شروع و باخت
-start_image = pygame.transform.scale2x(pygame.image.load(r"Flappy Bird\assets\img\message.png"))
+start_image = pygame.transform.scale2x(pygame.image.load(r"assets\img\message.png"))
 start_image_rect = start_image.get_rect(center = (240, 370))
 
 #تابع برخورد پرنده به لوله
